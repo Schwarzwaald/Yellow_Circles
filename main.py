@@ -205,7 +205,7 @@ class MyWidget(QMainWindow, Ui_MainWindow):
         self.repaint()
 
     def draw_circle(self, qp):
-        qp.setBrush(QColor(255, 222, 58))
+        qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0,255)))
         # qp.drawRect(random.randint(10, 500), randint(10, 500), randint(10, 100), randint(10, 100))
         x = random.randint(10, 700)
         x1 = random.randint(10, 500)
